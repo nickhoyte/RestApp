@@ -1,0 +1,81 @@
+{{> messages}}
+
+{{#if name}}
+<h2>{{name}}</h2>
+<table class=" table">
+    <tr>
+        <td>Restaurant Name:</td>
+        <td>{{name}}</td>
+    </tr>
+    <tr>
+        <td>Address:</td>
+        <td>
+            <p>{{address.street}}</p>
+            <p>{{address.parish}}</p>
+            <p>{{address.zip}}</p>
+        </td>
+    </tr>
+    <tr>
+        <td>Phone Number:</td>
+        <td>{{phone}}</td>
+    </tr>
+    <tr>
+        <td>Open/Closed:</td>
+        <td>
+            {{#if openToday}}
+            {{#if opensAt}}
+            Opens at {{opensAt}}
+            {{else}}
+            Closes at {{closesAt}}
+            {{/if}}
+            {{else}}
+            Closed
+            {{/if}}
+        </td>
+    </tr>
+    <tr>
+        <td>Website:</td>
+        <td>{{website}}</td>
+    </tr>
+    <tr>
+        <td>Delivery:</td>
+        <td>
+            {{#if deliver}}
+            Yes
+            {{else}}
+            No
+            {{/if}}
+        </td>
+    </tr>
+    <tr>
+        <td>Pick Up:</td>
+        <td>
+            {{#if pick_up}}
+            Yes
+            {{else}}
+            No
+            {{/if}}
+        </td>
+    </tr>
+    <tr>
+        <td>Dine In:</td>
+        <td>
+            {{#if dine_in}}
+            Yes
+            {{else}}
+            No
+            {{/if}}
+        </td>
+    </tr>
+    <tr>
+        <td>Menu:</td>
+        <td><a href="">Menu</a></td>
+    </tr>
+</table>
+{{/if}}
+
+{{#loggedIn}}
+    {{#if edit}}
+        <p><a href="">Edit Restaurant</a></p>
+    {{/if}}
+{{/loggedIn}}

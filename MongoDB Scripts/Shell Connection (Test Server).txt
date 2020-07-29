@@ -1,0 +1,1 @@
+mongo "mongodb+srv://natingtoeat-qmtcu.gcp.mongodb.net/test"  --username nickhoyte

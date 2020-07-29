@@ -1,0 +1,127 @@
+db.restaurants.insert({
+	rest_url: '',
+	name: 'Bubba\'s Rum Shack',
+	cuisine: '',
+	address: { 
+		street: '123 Test Lane',
+		parish: 'St. Peter',
+		zip: 'BB12345'
+	},
+	phone: '5556757782',
+	website: '',
+	deliver: false,
+	delivery_boundary: false,
+	delivery_boundary_length: 0.00,
+	pick_up: false,
+	dine_in: false,
+	opening_hours:[
+		{
+			open: false,
+			open_time: 540,
+			close_time: 780
+		},
+		{
+			open: false,
+			open_time: 540,
+			close_time: 780 
+		},
+		{
+			open: false,
+			open_time: 540,
+			close_time: 780 
+		},
+		{
+			open: false,
+			open_time: 540,
+			close_time: 780 
+		},
+		{
+			open: false,
+			open_time: 540,
+			close_time: 780 
+		},
+		{
+			open: false,
+			open_time: 540,
+			close_time: 780
+		},
+		{
+			open: false,
+			open_time: 540,
+			close_time: 780
+		}
+	],
+	menus: [
+		{
+			menu_name: 'Lunch Menu',
+			sub_menus: [
+				{
+					sub_menu_name: 'Main Dishes',
+					menu_items: [
+						{
+							item_name: 'Lasagne',
+							item_desc: 'Meat lasagne with noodles',
+							item_price: '24.00'
+						}
+					]
+				}
+			]
+		},
+		{
+			menu_name: 'Dinner Menu',
+			sub_menus: [
+				{
+					sub_menu_name: 'Main Dishes',
+					menu_items:[
+						{
+							item_name: 'Steak',
+							item_desc: 'Rib-eye',
+							item_price: '65.00'
+						}
+					]
+				}
+			]
+		}
+	],
+	tags: ['bar', 'local food'],
+	verified: false,
+	user: {
+		username: 'Big_Bubba',
+		status: 'owner'
+	},
+	avg_cost: 0.00,
+	review_scores: {
+		one_star: 0,
+		two_star: 0,
+		three_star: 0,
+		four_star: 0,
+		five_star: 0,
+		num_reviews: 0,
+		avg_score: 0
+	},
+	reviews: [
+		{
+			username: '',
+			f_name: '',
+			l_name: '',
+			num_reviews: 0,
+			review_score: 0,
+			review_date: '',
+			review_text: '',
+			likes: 0
+		}
+	],
+	main_image: {
+		thumbnail_url: '',
+		medium_url: '',
+		original_url: '',
+		xl_url: ''
+	},
+	user_images: [
+		{
+			image_url: '',
+			username: '',
+			image_desc: ''
+		}
+	]
+})

@@ -1,0 +1,68 @@
+<h2>Register a new restaurant</h2>
+
+<style>
+    input.largeBox {
+        transform: scale(5);
+        margin : 30px;
+    }
+</style>
+
+{{> messages}}
+
+<form action="/auth/register-restaurant" method="POST">
+	<div class="form-group">
+		<label for="name">Name:</label>
+		<input type="text" class="form-control" name="name" id="name" />
+	</div>
+	<div class="form-group">
+		<label for="cuisine">Cuisine:</label>
+		<select class="form-control" name="cuisine" id="cuisine">
+			<option>Caribbean</option>
+			<option>Asian</option>
+			<option>Italian</option>
+			<option>Indian</option>
+		</select>
+	</div>
+	<div class="form-group">
+		<label for="street">Street Address</label>
+		<input type="text" class="form-control" name="street" id="street" />
+	</div>
+	<div class="form-group">
+		<label for="parish">Parish:</label>
+		<select class="form-control" name="parish" id="parish">
+			<option>Christ Church</option>
+			<option>St. Andrew</option>
+			<option>St. George</option>
+			<option>St. James</option>
+			<option>St. John</option>
+			<option>St. Joseph</option>
+			<option>St. Lucy</option>
+			<option>St. Michael</option>
+			<option>St. Peter</option>
+			<option>St. Philip</option>
+			<option>St. Thomas</option>
+		</select>
+	</div>
+	<div class="form-group">
+		<label for="zip">Zip:</label>
+		<input type="text" class="form-control" name="zip" id="zip" />
+	</div>
+	<div class="form-group">
+		<label for="phone">Phone:</label>
+		<input type="text" class="form-control" name="phone" id="phone" />
+	</div>
+	<div class="form-group">
+		<label for="website">Website url:</label>
+		<input type="text" class="form-control" name="website" id="website" />
+	</div>
+	<div class="form-group">
+		<label for="delivery">Delivery:</label>
+		<input type="checkbox" class="form-control" name="delivery" id="delivery" />
+	</div>
+
+
+
+	<button class="btn btn-primary">Register</button>
+</form>
+
+<p><a href="/">Cancel</a></p>

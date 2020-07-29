@@ -1,0 +1,25 @@
+{{> messages}}
+
+{{#if username}}
+<h2>{{username}}'s profile</h2>
+<table class=" table">
+    <tr>
+        <td>First name:</td>
+        <td>{{f_name}}</td>
+    </tr>
+    <tr>
+        <td>Last name:</td>
+        <td>{{l_name}}</td>
+    </tr>
+    <tr>
+        <td>Email:</td>
+        <td>{{email}}</td>
+    </tr>
+</table>
+{{/if}}
+
+{{#loggedIn}}
+    {{#if owner}}
+        <p><a href="/account">Edit Profile</a></p>
+    {{/if}}
+{{/loggedIn}}

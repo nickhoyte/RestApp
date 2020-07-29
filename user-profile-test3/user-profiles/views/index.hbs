@@ -1,0 +1,17 @@
+<h1>RestAppDemo</h1>
+{{#if recentUsers}}
+<h2>Recent User Profiles:</h2>
+<ul>
+    {{#each recentUsers}}
+    <li><a href="/users/{{username}}">{{username}}</a></li>
+    {{/each}}
+</ul>
+{{/if}}
+{{#if recentRestaurants}}
+<h2>Recent Restaurant Profiles:</h2>
+<ul>
+    {{#each recentRestaurants}}
+    <li><a href="/restaurants/{{name}}">{{name}}</a></li>
+    {{/each}}
+</ul>
+{{/if}}

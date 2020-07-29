@@ -1,0 +1,13 @@
+db.users.insert({
+	username: 'Tester',
+	email: 'test@test.com',
+	password: 'test123',
+	f_name: 'John',
+	l_name: 'Doe',
+	user_image: {
+		thumbnail_url: '',
+		medium_url: '',
+		original_url: '',
+		xl_url: ''
+	}
+})
